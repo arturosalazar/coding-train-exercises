@@ -1,14 +1,9 @@
+//Exercise for  Coding Train 1.3
+//Goal - create a picture using some of the functions/features of p5.js
+
 function setup() {
   createCanvas(600, 340);
-
 }
-
-// function I made to help me find coordinates for the sun's peaks
-// function mousePressed() {
-//   console.log('Mouse X:' + mouseX);
-//   console.log('Mouse Y:' + mouseY);
-//   return false;
-// }
 
 function draw() {
   background(99, 129, 247);
@@ -17,19 +12,17 @@ function draw() {
   stroke(90)
   fill(238, 96, 44)
 
-
-  //peaks - second level
+  //To create the castle, I had to make the 2nd level first, and then the 1st level
+  //castle peaks - second level
   rect(240, 211, 12, 100);
   rect(260, 211, 12, 100);
 
-  //peaks - second level edges
+  //castle peaks - second level edges
   rect(221, 211, 10, 100);
   rect(279, 211, 10, 100);
 
   //castle-second-main
-
   rect(250, 215, 68, 75);
-
 
   //castle-second-windows
   fill(0)
@@ -38,17 +31,16 @@ function draw() {
 
   //reset castle color
   fill(238, 96, 44)
+	
   //peaks - first level
   rect(220, 268, 12, 100);
   rect(240, 268, 12, 100);
   rect(260, 268, 12, 100);
   rect(280, 268, 12, 100);
 
-
   //peaks - first level edges
   rect(205, 268, 10, 100);
   rect(295, 268, 10, 100);
-
 
   //castle-main
   rect(250, 272, 100, 75);
@@ -64,13 +56,14 @@ function draw() {
   //flag
   fill(255)
   triangle(18, 40, 60, 40, 60, 80)
+	
   //flag pole
   fill(175, 248, 68)
   rect(60, 160, 5, 250)
+	
   //flag circle
   fill(0, 168, 41)
   ellipse(60, 30, 18)
-  //flag
 
   //flag base
   fill(238, 96, 44)
@@ -84,8 +77,6 @@ function draw() {
   //side pipe
   rect(460, 282, 50, 50, 0, 15, 15, 0)
   rect(430, 281, 20, 56)
-
-
 
   //ground
   fill(238, 96, 44)
@@ -107,9 +98,9 @@ function draw() {
   fill(0, 171, 41)
   arc(350, 310, 40 * 1.5, 65 * 2, PI + TWO_PI, TWO_PI);
   
-
   cloud(120, 140, 2);
   cloud(420, 150, 1.5);
+	
   //cloud function from Clouds by jackiezen
   function cloud(x, y, size) {
     fill(255, 255, 255);
@@ -119,7 +110,4 @@ function draw() {
     arc(x + 25, y, 25 * size, 35 * size, PI + TWO_PI, TWO_PI);
     arc(x + 40, y, 30 * size, 20 * size, PI + TWO_PI, TWO_PI);
   }
-  
-  
-
 }
