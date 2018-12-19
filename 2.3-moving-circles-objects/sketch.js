@@ -2,6 +2,8 @@
 //Use variables to change aspects of the circle
 //animate, change size, change color etc
 
+//Use objects to contain/group related variables
+
 var circle = {
   x: 0,
   y: 0,
@@ -19,10 +21,8 @@ function setup() {
 }
 
 function draw() {
-  //background
   background(0, 0, 100);
 
-  //ellipse
   fill(colorRGB.red, colorRGB.green, colorRGB.blue, colorRGB.alpha)
   ellipse(circle.x, circle.y, circle.size)
 
