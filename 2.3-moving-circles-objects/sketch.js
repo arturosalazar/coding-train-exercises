@@ -13,7 +13,7 @@ var circle = {
 var colorRGB = {
   red: 250,
   green: 200,
-  blue: 200,
+  blue: 200
 }
 
 function setup() {
@@ -23,8 +23,8 @@ function setup() {
 function draw() {
   background(0, 0, 100);
 
-  fill(colorRGB.red, colorRGB.green, colorRGB.blue, colorRGB.alpha)
-  ellipse(circle.x, circle.y, circle.size)
+  fill(colorRGB.red, colorRGB.green, colorRGB.blue, colorRGB.alpha);
+  ellipse(circle.x, circle.y, circle.size);
 
   //change position
   circle.x += random(7);
@@ -41,7 +41,7 @@ function draw() {
   //reset all variables to 0 if go over size requirements
   if (circle.x > 600) circle.x = 0;
   if (circle.y > 400) circle.y = 0;
-  if (circle.size > 100) circle.size = 0
+  if (circle.size > 100) circle.size = 0;
 
   if (colorRGB.red > 255) colorRGB.red = 0;
   if (colorRGB.green > 255) colorRGB.green = 0;
