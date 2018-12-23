@@ -1,14 +1,16 @@
-//Exercise for Coding Traing 2.5
-//Goal: Use random to make dots appear all over canvas
-//in different colors
+/*
+Exercise from Coding Traing 2.5
+Goal: Use random to make dots appear all over canvas in a range of colors
+Practice using the random() function
+*/
 
 var spot ={
-	x:50,
+  x:50,
   y:50
 }
 
 var colors = {
-	r:200,
+  r:200,
   g:0,
   b:0,
 }
@@ -18,7 +20,7 @@ function setup() {
   background (0);
 }
 
-//draw a bunch of dots in random places
+//draw the dots on random locations across the whole canvas
 function draw() {
   spot.x = random(0,width)
   spot.y = random(0,height)
