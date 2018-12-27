@@ -1,7 +1,7 @@
 /*
-Exercise from Coding Train 2.4
-use p5.js's map() function to control background color and circle color
-map() rgb values to the mouseX and mouseY locations
+  Exercise from Coding Train 2.4
+  use p5.js's map() function to control background color and circle color
+  map() rgb values to the mouseX and mouseY locations
 */
 
 var colors = {
