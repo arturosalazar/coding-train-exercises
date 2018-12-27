@@ -1,6 +1,7 @@
-//Exercise from Coding Train 2.2
-//Use variables to change aspects of the circle
-//animate, change size, change color etc
+/*
+  Exercise from Coding Train 2.2
+  Use variables to change aspects of the circle animate, change size, change color etc
+*/
 
 let circleX = 0;
 let circleY = 0;
