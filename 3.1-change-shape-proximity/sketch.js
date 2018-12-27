@@ -1,7 +1,7 @@
 /*
-Exercise for Coding Train 3.1
-Goal: Use if() conditional statement to control a central shape 
-based on the mouse's proximity to shape
+  Exercise for Coding Train 3.1
+  Goal: Use if() conditional statement to control a central shape 
+  based on the mouse's proximity to shape
 */
 
 function setup() {
