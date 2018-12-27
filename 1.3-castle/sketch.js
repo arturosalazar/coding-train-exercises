@@ -1,5 +1,7 @@
-//Exercise for  Coding Train 1.3
-//Goal - create a picture using some of the functions/features of p5.js
+/*
+  Exercise for  Coding Train 1.3
+  Goal - create a picture using some of the functions/features of p5.js
+*/
 
 function setup() {
   createCanvas(600, 340);
