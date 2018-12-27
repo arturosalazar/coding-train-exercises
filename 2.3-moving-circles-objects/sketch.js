@@ -1,8 +1,10 @@
-//Exercise from Coding Train 2.3
-//Use variables to change aspects of the circle
-//animate, change size, change color etc
+/*
+  Exercise from Coding Train 2.3
+  Use variables to change aspects of the circle
+  animate, change size, change color etc
 
-//Use objects to contain/group related variables
+  Use objects to contain/group related variables
+*/
 
 var circle = {
   x: 0,
