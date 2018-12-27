@@ -1,7 +1,7 @@
 /*
-Exercise from Coding Traing 2.5
-Goal: Use random to make dots appear all over canvas in a range of colors
-Practice using the random() function
+  Exercise from Coding Traing 2.5
+  Goal: Use random to make dots appear all over canvas in a range of colors
+  Practice using the random() function
 */
 
 var spot ={
