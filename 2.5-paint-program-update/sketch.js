@@ -1,9 +1,9 @@
 /*
-Exercise from Coding Train 2.1 updated with 2.5 tools
-Make a paint program using mouseX and mouseY
-In addition, make a new color changing animation for the circle "brush"
+  Exercise from Coding Train 2.1 updated with 2.5 tools
+  Make a paint program using mouseX and mouseY
+  In addition, make a new color changing animation for the circle "brush"
 
-Use the random() function to update the color of the brush
+  Use the random() function to update the color of the brush
 */
 
 let circle = 1;
