@@ -1,9 +1,9 @@
 /*
-Coding Train 2.1 Exercise
-Make a paint program using mouseX and mouseY
+  Coding Train 2.1 Exercise
+  Make a paint program using mouseX and mouseY
 
-In addition, make a new color changing animation for the circle "brush"
-/*
+  In addition, make a new color changing animation for the circle "brush"
+*/
 
 let circle = 1;
 let currentColor = 0;
