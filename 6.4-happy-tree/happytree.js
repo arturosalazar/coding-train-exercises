@@ -1,4 +1,3 @@
-
 class HappyTree {
   constructor(x,y,wide,speed) {
     this.x = x;
