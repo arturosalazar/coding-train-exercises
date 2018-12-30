@@ -1,7 +1,12 @@
-//Exercise for Coding Train 6.4
+/*
+  Exercise for Coding Train 6.4
 
-//Goal - place classes in a separate .js file
-
+  Goal - update happy trees exercise
+  
+  Place classes and user input functions in separate .js files
+  
+  NOTE: The key to these files working is to indicate them as src files in index.html
+*/
 let tree1,tree2,tree3,tree4,tree5,tree6;
 
 function setup() {
@@ -12,7 +17,6 @@ function setup() {
   tree4 = new HappyTree(random(0,100),random(0,100),30,random(1,5));
   tree5 = new HappyTree(random(0,100),random(0,100),30,random(1,5));
   tree6 = new HappyTree(random(0,100),random(0,100),30,random(1,5));
-  
 }
 
 function draw() {
@@ -30,5 +34,4 @@ function draw() {
   tree4.move();
   tree5.move();
   tree6.move();
-  
 }
