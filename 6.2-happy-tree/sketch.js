@@ -31,10 +31,6 @@ class HappyTree {
   	this.x = this.x + random(-5,5)
   	this.y = this.y + random(-5,5)
   }
-  
-  
-
-
 }
 
 function setup() {
@@ -51,5 +47,4 @@ function draw() {
 
   tree1.move();
   tree2.move();
-  
 }
