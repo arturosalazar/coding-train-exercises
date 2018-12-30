@@ -1,4 +1,3 @@
-
 class HappyTree {
   constructor(x,y,wide,speed) {
     this.x = x;
@@ -19,8 +18,4 @@ class HappyTree {
   	this.x = this.x + random(this.speed)
   	this.y = this.y + random(this.speed)
   }
-  
-  
-
-
 }
