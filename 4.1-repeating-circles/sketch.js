@@ -1,7 +1,7 @@
 /*
   Exercise for Coding Train 4.1
   Use a while loop to create circles across the canvas
-/*
+*/
 
 function setup() {
   createCanvas(600, 400);
