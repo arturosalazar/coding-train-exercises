@@ -12,17 +12,30 @@ function setup() {
 
 function draw() {
   background(0);
- 	noStroke()
+  noStroke();
   let blue = 0;
-  for (x = 0; x <= width; x = x + 50) {
+  let y = 200;
+  let yChange = -25
+  
+  for (x = 0; x <= width; x = x + 3) {  
     blue = map(x,0,width,0,255);
     fill(255,0,blue);
+    
+    y = y + yChange
+    
+    if (y<10){
+     	yChange = -yChange
+    }
+    if (y>390){
+     	yChange = -yChange
+    }
+    
     if(x%100==50){
 			rectMode(CENTER)
-      rect(x,200,25,25)
+      rect(x,y,25,25)
     }
     else{
-      ellipse(x, 200, 25, 25);
+      ellipse(x, y, 25, 25);
     }
   }
 }
