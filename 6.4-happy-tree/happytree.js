@@ -15,7 +15,7 @@ class HappyTree {
     triangle(this.x, this.y, this.x + 40 + this.wide, this.y + 65, this.x - 40 - this.wide, this.y + 65);
   }
   move(){
-this.x = this.x + random(this.speed)
-this.y = this.y + random(this.speed)
+    this.x = this.x + random(this.speed)
+    this.y = this.y + random(this.speed)
   }
 }
