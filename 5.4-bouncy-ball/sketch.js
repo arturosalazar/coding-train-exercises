@@ -99,9 +99,10 @@ let ballInteraction = {
       if ((circleLoc.speedX < 0 && circleLoc2.speedX > 0) || (circleLoc.speedX > 0 && circleLoc2.speedX < 0)){
       	this.oppositeSpeedX();
       }
-      if ((circleLoc.speedY < 0 && circleLoc2.speedY > 0) || (circleLoc.speedY > 0 && circleLoc2.speedY < 0)){
+      else if ((circleLoc.speedY < 0 && circleLoc2.speedY > 0) || (circleLoc.speedY > 0 && circleLoc2.speedY < 0)){
         this.oppositeSpeedY();
       }
+      //TODO: Add conditionals for if speedY or speedX == 0
     }
   }
 
