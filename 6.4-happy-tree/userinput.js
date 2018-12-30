@@ -8,7 +8,6 @@ function keyPressed() {
     tree5.x = random(0, 100);
     tree6.x = random(0, 100);
 
-
     tree1.y = random(0, 100);
     tree2.y = random(0, 100);
     tree3.y = random(0, 100);
@@ -21,10 +20,10 @@ function keyPressed() {
 //when the mouse is pressed, increase tree speed
 //"sprint to finish"
 function mousePressed() {
-  tree1.speed += 2
-  tree2.speed += 2
-  tree3.speed += 2
-  tree4.speed += 2
-  tree5.speed += 2
-  tree6.speed += 2
+  tree1.speed += 2;
+  tree2.speed += 2;
+  tree3.speed += 2;
+  tree4.speed += 2;
+  tree5.speed += 2;
+  tree6.speed += 2;
 }
