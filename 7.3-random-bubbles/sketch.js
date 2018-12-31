@@ -3,25 +3,32 @@
   Practice using for loops to create objects in arrays
   
   A demonstration of the ability to loop to create new objects in an array
+  
+  slight modification to create a gradient of colors based on the circle's location
 */
 
 let bubbles = [];
 
 function setup() {
   createCanvas(600, 400);
-  for (let i=0;i<4000;i++) {
+  for (let i=0;i<400;i++) {
     bubbles[i] = {
       x: random(0, width),
       y: random(0, height),
+      blue:0,
+      green:0,
       move: function() {
         this.x = this.x + random(-5, 5);
         this.y = this.y + random(-5, 5);
       },
       show() {
-        stroke(255);
+      	//create a gradient of colors based on location
+      	this.blue = map(this.x,0,width,0,255);
+      	this.green = map(this.y,0,height,0,255);
+        stroke(255,this.green,this.blue);
         strokeWeight(4);
         noFill();
-        ellipse(this.x, this.y, 1);
+        ellipse(this.x, this.y, 25);
       }
     }
   }
