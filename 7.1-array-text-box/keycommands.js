@@ -1,3 +1,4 @@
+//mouse click to increment
 function mousePressed() {
   position += 1;
   if (position === 4) {
@@ -14,19 +15,18 @@ function keyPressed() {
       position = 3;
     }
   }
-  //decriment left arrow
-  if (keyCode == 37) {
-    position -= 1;
-    if (position < 0) {
-      position = 3;
-    }
-  }
-  //increment right arrow
+  //right arrow to increment
   if (keyCode == 39) {
     position += 1;
     if (position === 4) {
       position = 0;
     }
   }
-
+  //left arrow to decriment
+  if (keyCode == 37) {
+    position -= 1;
+    if (position < 0) {
+      position = 3;
+    }
+  }
 }
