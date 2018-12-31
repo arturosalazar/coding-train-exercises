@@ -1,6 +1,6 @@
 /*
   Modification on program from Coding Train 6.4
-  Create bubbles on the screen with classes
+  Create vibrating bubbles on the screen with classes
   
   Separate functionality onto different .js files
 */
