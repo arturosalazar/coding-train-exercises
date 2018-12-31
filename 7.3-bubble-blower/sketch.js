@@ -3,8 +3,9 @@
   Practice using for loops to create objects in arrays utilizing Class definitions
 
   Goal - create bubbles that errupt from a "blower" when clicking or dragging the mouse
+  
+  Modify to control where the bubbles "blow" based on mouse position when clicking/dragging
 */
-
 
 let bubbles = [];
 
@@ -18,7 +19,6 @@ function mousePressed() {
   bubbles.push(b);
 }
 
-//make each bubble appear from the "blower"
 function mouseDragged() {
   let r = random(10, 40);
   let b = new Bubble(130, 277, r);
@@ -36,22 +36,23 @@ function draw() {
     bubbles[i].move();
     bubbles[i].show();
   }
-  
 }
-
 
 class Bubble {
   constructor(x, y, r) {
     this.x = x
     this.y = y
     this.r = r
+    //convert mouseY into up and down direction for bubble move
+    this.direction = map(mouseY,0,height,-3,1.5);
   }
-  //bubbles will move off screen with enough randomness to look like blowing in the wind
   move() {
     this.x = this.x + random(-1, 5);
-    this.y = this.y + random(0,-3);
+ 
+    //use converted mouseY val to change the direction of bubble
+    //move up and down
+    this.y = this.y + this.direction;
   }
-
   show() {
     stroke(0, 255, 255,20);
     strokeWeight(4);
