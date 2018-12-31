@@ -2,20 +2,16 @@
   Exercise for Coding Train 7.1
   Goal - recreate the demonstration from the youtube video
   
-  Create an array with strings. Display one of the string values to the screen
+  Create an array with strings. Loop over the words array to display all of the words on the string
   
-  Iterate over the array values (circling to the first item after the last) when the mouse is clicked
+  Use the position variable to determine which word should be highlighted
   
-  Use spacebar/mouse click and left arrow/right arrow to increment and decriment through array
-  
-  Use another .js file to contain the key commands
+  keycommands.js provideds functionality so that up and down arrows change which position is selected
 */
 
-let words = ["swing dancing", "lindy hop", "balboa", "charleston"]
+let words = ["swing dancing", "lindy hop", "charleston","balboa"]
 
-let size = [32, 12, 60, 40]
-
-let sizeNum = 0;
+let size = [60, 50, 40, 30]
 
 let position = 0;
 
@@ -26,6 +22,11 @@ function setup() {
 function draw() {
   background(0);
   fill(255)
-  textSize(size[sizeNum])
-  text(words[position], 12, 200);
+  for (let i = 0; i<words.length; i++){
+    if (position == i) fill(255,255,0)
+    else fill(255)
+    textSize(size[i])
+  	text(words[i], 12, 60+i*100);    
+  }
 }
+
