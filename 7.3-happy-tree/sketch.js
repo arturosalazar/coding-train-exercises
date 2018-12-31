@@ -1,9 +1,7 @@
-//Exercise for Coding Train 7.3 UPDATED 10/17 version
-
-//Goal - using a previous project, auto generate objects
-
-//use loops and classes to generate these trees
-
+/*
+  Exercise for Coding Train 7.3 UPDATED 10/17 version
+  Goal - using a previous project, auto generate objects using loops and classes
+*/
 let trees = [];
 
 function setup() {
@@ -16,7 +14,6 @@ function setup() {
     let speed = random(1,5);
   	trees[i] = new HappyTree(x,y,width,speed);
   }
-
 }
 
 function draw() {
