@@ -5,15 +5,21 @@
   Goal - create bubbles using class definitions and "new" keyword 
   Create circles on mouse click
 */
+
 let bubbles = [];
 
 function setup() {
   createCanvas(600, 400);
 }
 
-//when mouse clicked, create a new object in a variable and push that variable to the array
 function mousePressed() {
-  let r = random(10, 40);
+  let r = random(10, 50);
+  let b = new Bubble(mouseX, mouseY, r);
+  bubbles.push(b);
+}
+
+function mouseDragged() {
+  let r = random(10, 50);
   let b = new Bubble(mouseX, mouseY, r);
   bubbles.push(b);
 }
@@ -25,8 +31,8 @@ function draw() {
     bubbles[i].move();
     bubbles[i].show();
   }
+  
 }
-
 
 class Bubble {
   constructor(x, y, r) {
@@ -35,8 +41,8 @@ class Bubble {
     this.r = r
   }
   move() {
-    this.x = this.x + random(-5, 5);
-    this.y = this.y + random(-5, 5);
+    this.x = this.x + random(-1, 1);
+    this.y = this.y + random(-1, 1);
   }
   show() {
     stroke(255);
