@@ -1,8 +1,15 @@
-//Exercise for Coding Train 7.1 - What is an array
-
-//Goal - create own array to use on a different parameter
-
-//try to make the parameter random
+/*
+  Exercise for Coding Train 7.1
+  Goal - recreate the demonstration from the youtube video
+  
+  Create an array with strings. Display one of the string values to the screen
+  
+  Iterate over the array values (circling to the first item after the last) when the mouse is clicked
+  
+  Use spacebar/mouse click and left arrow/right arrow to increment and decriment through array
+  
+  Use another .js file to contain the key commands
+*/
 
 let words = ["swing dancing", "lindy hop", "balboa", "charleston"]
 
@@ -22,4 +29,3 @@ function draw() {
   textSize(size[sizeNum])
   text(words[position], 12, 200);
 }
-
