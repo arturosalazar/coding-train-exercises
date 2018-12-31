@@ -1,5 +1,9 @@
-//Modification on program from Coding Train 6.4
-//Create new functionality in a new js file 
+/*
+  Modification on program from Coding Train 6.4
+  Create bubbles on the screen with classes
+  
+  Separate functionality onto different .js files
+*/
 
 let bubble1;
 let bubble2;
