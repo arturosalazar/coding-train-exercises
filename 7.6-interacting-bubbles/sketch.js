@@ -1,11 +1,11 @@
 /*
-Copy of the code from Coding Train 7.6 - Object communication part 1 
+  Copy of the code from Coding Train 7.6 - Object communication part 1 
 
-goal - recreate code from 7.6
-create a bubble class - within the bubble class, create a function to detect if 2 bubbles touch
-create two bubbles with the class
+  goal - recreate code from 7.6
+  create a bubble class - within the bubble class, create a function to detect if 2 bubbles touch
+  create two bubbles with the class
 
-change the background if the two bubbles touch
+  change the background if the two bubbles touch
 */
 
 let bubble1;
