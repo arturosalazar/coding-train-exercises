@@ -2,16 +2,15 @@
   Copy of the code from Coding Train 7.7 - Object communication part 2
   goal - recreate code from 7.7
   create a bubble class - within the bubble class, create a function to detect if 2 bubbles touch
-  create two bubbles with the class
-  change the background if the two bubbles touch
-  copy up to 11:03 - the bubbles will highlight when they touch, but don't clear when they stop touching
+  create multiple bubbles with the class
+  change the background of a bubble if it touches another, remove change if they stop touching 
 */
 
 let bubbles = []
 
 function setup() {
   createCanvas(600, 400);
-  for (let i = 0; i<10; i++){
+  for (let i = 0; i<20; i++){
     let x = random(width);
     let y = random(height);
     let r = random(10,50);
@@ -23,14 +22,23 @@ function draw() {
   background(0);
 	
   for (let b of bubbles){
-  	b.show();
+    b.show();
     b.move();
+    let overlapping = false;
     for (let other of bubbles) {
-    	if (b!==other&&b.intersects(other)){
-				b.changeColor(255);
+    //We check if b doesn't equal other on each for loop to 
+    //avoid an object checking if it intersects itself
+      if (b!==other&&b.intersects(other)){
+        overlapping = true;
+      }
+	    
+      if (overlapping) {
+        b.changeColor(255);
+      } else {
+        b.changeColor(0);
       }
     }
-  }  
+  }
 }
 
 class Bubble {
@@ -40,12 +48,12 @@ class Bubble {
     this.r = r;
     this.brightness = 0;
   }
-	intersects(other){
-    let d = dist(this.x,this.y,other.x,other.y);
-    return d<this.r+other.r;
+  intersects(other){
+    let d = dist(this.x,this.y,other.x,other.y)
+    return d<this.r+other.r
   }
-	changeColor(bright){
-   this.brightness = bright; 
+  changeColor(bright){
+    this.brightness = bright; 
   }
   move() {
     this.x = this.x + random(-1, 1);
