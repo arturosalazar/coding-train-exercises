@@ -24,15 +24,14 @@ function draw() {
   for (let b of bubbles){
     b.show();
     b.move();
-    let overlapping = false;
     for (let other of bubbles) {
     //We check if b doesn't equal other on each for loop to 
     //avoid an object checking if it intersects itself
       if (b!==other&&b.intersects(other)){
-        overlapping = true;
+        b.overlapping = true;
       }
 	    
-      if (overlapping) {
+      if (b.overlapping) {
         b.changeColor(255);
       } else {
         b.changeColor(0);
@@ -47,6 +46,7 @@ class Bubble {
     this.y = y;
     this.r = r;
     this.brightness = 0;
+    this.overlapping = false;
   }
   intersects(other){
     let d = dist(this.x,this.y,other.x,other.y)
@@ -64,5 +64,6 @@ class Bubble {
     strokeWeight(4);
     fill(this.brightness,100);
     ellipse(this.x, this.y, this.r * 2);
+    this.overlapping = false;
   }
 }
